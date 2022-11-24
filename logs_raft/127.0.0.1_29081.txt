@@ -1,0 +1,492 @@
+127.0.0.1_29081 -> 00:26:09.436558 raft.go:60: logger initialized
+127.0.0.1_29081 -> 00:26:11.436890 raft.go:602: STATE: Follower | 0
+127.0.0.1_29081 -> 00:26:11.653990 raft.go:605: STATE: Candidate | 1
+127.0.0.1_29081 -> 00:26:11.654082 raft.go:415: Nueva elección | 1
+127.0.0.1_29081 -> 00:26:11.655372 raft.go:383: RPC.PedirVoto: REQ[0]{&{1 0 -1 0}} -> RES[1]{&{1 true}}
+127.0.0.1_29081 -> 00:26:11.655404 raft.go:445: RECV RPC.PedirVoto: Voto recibido de 1
+127.0.0.1_29081 -> 00:26:11.655426 raft.go:608: STATE: Leader | 1
+127.0.0.1_29081 -> 00:26:11.655447 raft.go:659: Leader init: CI:-1 Log: [] Almacen: map[]
+127.0.0.1_29081 -> 00:26:11.655469 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:11.655664 raft.go:383: RPC.PedirVoto: REQ[0]{&{1 0 -1 0}} -> RES[2]{&{1 true}}
+127.0.0.1_29081 -> 00:26:11.656217 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 -1 0 [] -1}} -> RES[2]{&{1 true -1}}
+127.0.0.1_29081 -> 00:26:11.656240 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.656451 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 -1 0 [] -1}} -> RES[1]{&{1 true -1}}
+127.0.0.1_29081 -> 00:26:11.656473 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.671672 raft.go:193: Operacion añadida al log: {escribir key: 0 value: 0}
+127.0.0.1_29081 -> 00:26:11.681157 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:11.681697 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 -1 0 [{0 1 {escribir key: 0 value: 0}}] -1}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.681717 raft.go:471: RECV RPC.AppendEntries: OK -> avanzamos NI:0 -> NI:1 y MI:-1 -> MI:0
+127.0.0.1_29081 -> 00:26:11.681739 raft.go:577: Aplicada operación {escribir key: 0 value: 0}
+127.0.0.1_29081 -> 00:26:11.681767 raft.go:578: ESTADO NODO: init: CI:0 Log: [{0 1 {escribir key: 0 value: 0}}] Almacen: map[key: 0:value: 0]
+127.0.0.1_29081 -> 00:26:11.681833 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 -1 0 [{0 1 {escribir key: 0 value: 0}}] -1}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.681860 raft.go:471: RECV RPC.AppendEntries: OK -> avanzamos NI:0 -> NI:1 y MI:-1 -> MI:0
+127.0.0.1_29081 -> 00:26:11.705938 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:11.706608 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.706634 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.706610 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.706650 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.730750 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:11.731433 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.731456 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.731482 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.731509 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.755735 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:11.757063 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.757118 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.757063 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.757149 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.781206 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:11.782144 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.782218 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.782148 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.782281 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.806342 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:11.807690 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.807752 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.807935 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.807997 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.830851 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:11.832171 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.832303 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.832446 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.832506 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.856461 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:11.857841 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.857902 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.857930 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.858020 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.881035 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:11.882262 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.882321 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.882474 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.882528 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.905480 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:11.906661 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.906715 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.906844 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.906902 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.930948 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:11.932523 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.932666 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.933045 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.933112 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.955847 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:11.957596 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.957650 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.957815 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.957878 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.980822 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:11.982483 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.982550 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:11.983357 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:11.983412 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.006501 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.008374 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.008516 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.008696 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.008769 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.030528 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.032122 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.032263 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.032445 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.032505 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.056402 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.057288 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.057323 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.057518 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.057539 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.080655 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.081240 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.081286 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.081241 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.081305 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.106328 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.106821 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.106844 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.106895 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.106923 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.130990 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.132280 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.132311 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.132512 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.132547 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.156542 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.157546 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.157583 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.157563 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.157629 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.180770 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.181796 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.181841 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.182225 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.182269 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.206387 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.207589 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.207633 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.207669 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.207748 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.230740 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.232089 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.232211 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.232134 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.232302 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.256278 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.257953 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.258011 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.258260 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.258330 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.281193 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.282768 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.282964 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.282894 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.283033 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.305884 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.307348 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.307428 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.307635 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.307701 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.330705 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.332433 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.332500 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.332776 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.332845 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.355502 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.357167 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.357245 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.357230 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.357297 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.381163 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.382737 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.382881 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.382996 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.383068 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.405991 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.407724 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.407872 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.407819 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.408032 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.430949 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.432552 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.432713 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.432693 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.432877 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.455754 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.457177 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.457244 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.457500 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.457578 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.481442 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.483088 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.483152 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.483185 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.483249 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.506276 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.507940 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.508003 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.508316 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.508379 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.531127 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.533066 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.533129 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.533393 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.533452 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.555961 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.557445 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.557516 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.557545 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.557607 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.581556 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.583497 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.583553 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.583790 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.583849 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.606383 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.607011 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.607028 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.607113 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.607127 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.631441 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.631989 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.632007 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.632048 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.632072 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.656235 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.656820 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.656847 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.656820 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.656860 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.680952 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.681408 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.681426 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.681477 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.681496 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.705536 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.707011 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.707068 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.707329 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.707395 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.731202 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.732713 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.732790 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.733016 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.733084 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.756018 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.757846 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.757916 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.758710 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.758777 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.780843 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.782415 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.782490 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.782421 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.782535 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.805532 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.807008 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.807085 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.807012 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.807129 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.831154 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.832642 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.832706 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.832644 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.832747 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.855807 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.857279 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.857353 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.857581 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.857648 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.880489 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.882273 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.882357 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.882279 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.882404 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.906260 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.907747 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.907811 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.908074 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.908142 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.931035 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.932676 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.932822 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.932703 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.932989 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.955897 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.957406 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.957553 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.957802 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.957878 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.981565 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:12.983299 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.983496 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:12.983351 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:12.983564 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.006499 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.008206 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.008430 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.008321 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.008490 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.031407 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.032960 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.033041 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.033224 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.033280 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.056113 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.057679 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.057743 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.058182 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.058250 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.081360 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.083062 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.083203 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.083089 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.083342 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.106196 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.107779 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.107843 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.107871 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.107935 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.130905 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.132498 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.132566 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.132657 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.132727 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.155567 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.157180 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.157245 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.157562 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.157622 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.181357 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.182892 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.182969 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.183247 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.183323 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.206178 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.207784 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.207856 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.207954 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.207859 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.230930 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.232641 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.232724 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.232643 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.232772 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.255848 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.257487 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.257557 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.257795 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.257862 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.280525 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.282088 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.282154 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.282247 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.282319 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.306360 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.308865 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.308912 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.309270 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.309293 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.330578 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.331058 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.331076 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.331153 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.331175 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.356265 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.357604 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.357650 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.357749 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.357805 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.380615 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.382476 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.382525 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.382547 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.382570 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.406586 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.407648 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.407678 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.407808 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.407835 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.430942 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.431821 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.431864 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.431977 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.432012 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.456122 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.457136 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.457192 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.457527 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.457572 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.480690 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.481679 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.481732 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.481883 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.481929 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.505969 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.507646 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.507730 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.507859 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.507900 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.530810 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.532255 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.532323 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.532271 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.532370 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.556259 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.557958 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.558040 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.558135 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.558034 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.581154 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.582939 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.583008 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.583244 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.583311 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.606183 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.607816 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.607885 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.608129 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.608211 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.631078 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.632683 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.632878 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.632749 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.632948 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.655829 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.657472 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.657648 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.657550 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.657782 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.681405 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.682843 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.682957 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.683696 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.683760 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.705776 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.706355 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.706377 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.706449 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.706468 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.730510 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.731001 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.731017 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.731076 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.731092 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.756213 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.756601 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.756617 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.756735 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.756750 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.780881 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.782306 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.782362 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.782592 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.782658 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.806523 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.807959 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.808036 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.808230 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.808297 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.831193 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.832672 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.832747 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.832681 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.832795 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.855857 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.857268 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.857324 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.857324 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.857380 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.881412 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.882861 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.882941 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.883173 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.883241 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.906142 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.907685 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[1]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.907761 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.908545 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [] 0}} -> RES[2]{&{1 true 0}}
+127.0.0.1_29081 -> 00:26:13.908609 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29081 -> 00:26:13.929436 raft.go:193: Operacion añadida al log: {escribir key: 1 value: 1}
+127.0.0.1_29081 -> 00:26:13.930496 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.930513 raft.go:193: Operacion añadida al log: {escribir key: 2 value: 2}
+127.0.0.1_29081 -> 00:26:13.931610 raft.go:193: Operacion añadida al log: {escribir key: 3 value: 3}
+127.0.0.1_29081 -> 00:26:13.932222 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [{1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}}] 0}} -> RES[2]{&{1 true 2}}
+127.0.0.1_29081 -> 00:26:13.932282 raft.go:471: RECV RPC.AppendEntries: OK -> avanzamos NI:1 -> NI:3 y MI:0 -> MI:2
+127.0.0.1_29081 -> 00:26:13.932325 raft.go:577: Aplicada operación {escribir key: 1 value: 1}
+127.0.0.1_29081 -> 00:26:13.932414 raft.go:578: ESTADO NODO: init: CI:2 Log: [{0 1 {escribir key: 0 value: 0}} {1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}} {3 1 {escribir key: 3 value: 3}}] Almacen: map[key: 0:value: 0 key: 1:value: 1]
+127.0.0.1_29081 -> 00:26:13.932449 raft.go:577: Aplicada operación {escribir key: 2 value: 2}
+127.0.0.1_29081 -> 00:26:13.932495 raft.go:578: ESTADO NODO: init: CI:2 Log: [{0 1 {escribir key: 0 value: 0}} {1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}} {3 1 {escribir key: 3 value: 3}}] Almacen: map[key: 0:value: 0 key: 1:value: 1 key: 2:value: 2]
+127.0.0.1_29081 -> 00:26:13.932552 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 0 1 [{1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}}] 0}} -> RES[1]{&{1 true 2}}
+127.0.0.1_29081 -> 00:26:13.932662 raft.go:471: RECV RPC.AppendEntries: OK -> avanzamos NI:1 -> NI:3 y MI:0 -> MI:2
+127.0.0.1_29081 -> 00:26:13.956300 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.956473 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 2 1 [{3 1 {escribir key: 3 value: 3}}] 2}} -> RES[1]{&{0 false 0}}
+127.0.0.1_29081 -> 00:26:13.956496 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29081 -> 00:26:13.957117 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 2 1 [{3 1 {escribir key: 3 value: 3}}] 2}} -> RES[2]{&{1 true 3}}
+127.0.0.1_29081 -> 00:26:13.957136 raft.go:471: RECV RPC.AppendEntries: OK -> avanzamos NI:3 -> NI:4 y MI:2 -> MI:3
+127.0.0.1_29081 -> 00:26:13.957149 raft.go:577: Aplicada operación {escribir key: 3 value: 3}
+127.0.0.1_29081 -> 00:26:13.957167 raft.go:578: ESTADO NODO: init: CI:3 Log: [{0 1 {escribir key: 0 value: 0}} {1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}} {3 1 {escribir key: 3 value: 3}}] Almacen: map[key: 0:value: 0 key: 1:value: 1 key: 2:value: 2 key: 3:value: 3]
+127.0.0.1_29081 -> 00:26:13.981220 raft.go:507: Nuevo latido
+127.0.0.1_29081 -> 00:26:13.981360 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 3 1 [{3 1 {escribir key: 3 value: 3}}] 3}} -> RES[1]{&{0 false 0}}
+127.0.0.1_29081 -> 00:26:13.981380 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29081 -> 00:26:13.981689 raft.go:401: RPC.AppendEntries: REQ[0]{&{1 0 3 1 [{3 1 {escribir key: 3 value: 3}}] 3}} -> RES[2]{&{1 true 4}}
+127.0.0.1_29081 -> 00:26:13.981709 raft.go:471: RECV RPC.AppendEntries: OK -> avanzamos NI:4 -> NI:5 y MI:3 -> MI:4
+127.0.0.1_29081 -> 00:26:14.005887 raft.go:507: Nuevo latido

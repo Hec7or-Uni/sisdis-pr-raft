@@ -1,0 +1,470 @@
+127.0.0.1_29083 -> 00:26:09.450169 raft.go:60: logger initialized
+127.0.0.1_29083 -> 00:26:11.451327 raft.go:602: STATE: Follower | 0
+127.0.0.1_29083 -> 00:26:11.655270 raft.go:309: RECV RPC.PedirVoto: Voto concedido a 0
+127.0.0.1_29083 -> 00:26:11.655921 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:11.655949 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:11.655960 raft.go:353: Log: []
+127.0.0.1_29083 -> 00:26:11.681460 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:11.681497 raft.go:349: RPC.AppendEntries: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:11.681508 raft.go:218: Añadimos las entradas al log
+127.0.0.1_29083 -> 00:26:11.681519 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:11.706336 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:11.706369 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:11.706378 raft.go:223: Aplicamos a la máquina de estado aquellas entradas que no hayan sido aplicados
+127.0.0.1_29083 -> 00:26:11.706396 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:11.706416 raft.go:577: Aplicada operación {escribir key: 0 value: 0}
+127.0.0.1_29083 -> 00:26:11.706457 raft.go:578: ESTADO NODO: init: CI:0 Log: [{0 1 {escribir key: 0 value: 0}}] Almacen: map[key: 0:value: 0]
+127.0.0.1_29083 -> 00:26:11.731103 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:11.731127 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:11.731142 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:11.756437 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:11.756485 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:11.756510 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:11.781778 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:11.781834 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:11.781861 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:11.807140 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:11.807200 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:11.807231 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:11.831703 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:11.831755 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:11.831817 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:11.857345 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:11.857400 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:11.857446 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:11.881970 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:11.882027 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:11.882056 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:11.906177 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:11.906226 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:11.906254 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:11.931935 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:11.932000 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:11.932039 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:11.956827 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:11.957104 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:11.957210 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:11.981775 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:11.981839 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:11.981873 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.007671 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.007738 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.007774 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.031396 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.031465 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.031499 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.057278 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.057315 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.057337 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.081038 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.081059 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.081070 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.106633 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.106653 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.106665 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.131813 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.131889 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.131926 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.157265 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.157295 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.157312 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.181383 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.181427 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.181450 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.207116 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.207159 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.207185 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.231620 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.231671 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.231716 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.257237 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.257304 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.257341 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.282215 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.282319 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.282403 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.307008 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.307071 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.307110 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.331653 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.331713 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.331748 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.356411 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.356478 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.356513 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.382207 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.382269 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.382303 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.407048 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.407119 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.407156 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.431916 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.431983 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.432018 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.456620 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.456710 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.456750 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.482504 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.482567 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.482600 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.507485 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.507556 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.507592 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.532277 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.532346 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.532382 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.556781 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.556845 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.556880 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.582872 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.582952 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.583009 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.606792 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.606819 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.606831 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.631851 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.631878 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.631893 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.656619 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.656644 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.656656 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.681243 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.681262 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.681272 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.706510 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.706581 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.706617 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.732170 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.732228 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.732263 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.758118 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.758184 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.758222 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.781791 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.781857 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.781892 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.806386 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.806447 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.806483 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.831985 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.832050 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.832084 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.856625 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.856692 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.856728 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.881583 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.881660 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.881696 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.907261 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.907325 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.907361 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.931927 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.931993 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.932030 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.956755 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.956832 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.956870 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:12.982689 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:12.982756 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:12.982795 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.007528 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.007597 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.007633 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.032381 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.032455 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.032491 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.057569 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.057635 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.057670 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.082449 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.082512 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.082548 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.107225 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.107287 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.107322 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.131855 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.131929 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.131968 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.156561 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.156625 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.156673 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.182318 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.182380 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.182418 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.207113 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.207181 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.207216 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.231924 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.231998 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.232034 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.256990 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.257059 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.257094 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.281603 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.281665 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.281701 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.307266 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.307329 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.307362 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.330880 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.330909 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.330922 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.357156 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.357216 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.357244 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.381723 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.381789 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.381825 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.407378 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.407410 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.407427 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.431562 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.431603 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.431643 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.456728 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.456771 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.456794 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.481248 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.481292 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.481316 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.507030 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.507136 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.507177 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.531700 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.531760 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.531794 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.557312 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.557376 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.557452 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.582138 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.582288 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.582437 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.607174 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.607236 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.607271 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.631925 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.632000 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.632035 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.656866 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.656951 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.656989 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.682800 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.682944 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.683107 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.706137 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.706164 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.706177 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.730867 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.730887 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.730896 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.756607 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.756618 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.756625 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.781825 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.781887 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.781936 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.807537 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.807609 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.807647 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.832052 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.832116 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.832151 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.856653 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.856720 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.856757 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.882307 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.882371 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.882406 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.907965 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.908033 raft.go:349: RPC.AppendEntries: []
+127.0.0.1_29083 -> 00:26:13.908071 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}}]
+127.0.0.1_29083 -> 00:26:13.931524 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.931604 raft.go:349: RPC.AppendEntries: [{1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}}]
+127.0.0.1_29083 -> 00:26:13.931641 raft.go:218: Añadimos las entradas al log
+127.0.0.1_29083 -> 00:26:13.931681 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}} {1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}}]
+127.0.0.1_29083 -> 00:26:13.956806 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.956832 raft.go:349: RPC.AppendEntries: [{3 1 {escribir key: 3 value: 3}}]
+127.0.0.1_29083 -> 00:26:13.956840 raft.go:218: Añadimos las entradas al log
+127.0.0.1_29083 -> 00:26:13.956849 raft.go:223: Aplicamos a la máquina de estado aquellas entradas que no hayan sido aplicados
+127.0.0.1_29083 -> 00:26:13.956865 raft.go:577: Aplicada operación {escribir key: 1 value: 1}
+127.0.0.1_29083 -> 00:26:13.956883 raft.go:578: ESTADO NODO: init: CI:2 Log: [{0 1 {escribir key: 0 value: 0}} {1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}} {3 1 {escribir key: 3 value: 3}}] Almacen: map[key: 0:value: 0 key: 1:value: 1]
+127.0.0.1_29083 -> 00:26:13.956900 raft.go:577: Aplicada operación {escribir key: 2 value: 2}
+127.0.0.1_29083 -> 00:26:13.956921 raft.go:578: ESTADO NODO: init: CI:2 Log: [{0 1 {escribir key: 0 value: 0}} {1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}} {3 1 {escribir key: 3 value: 3}}] Almacen: map[key: 0:value: 0 key: 1:value: 1 key: 2:value: 2]
+127.0.0.1_29083 -> 00:26:13.956939 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}} {1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}} {3 1 {escribir key: 3 value: 3}}]
+127.0.0.1_29083 -> 00:26:13.981489 raft.go:335: AppendEntries recibido de 0
+127.0.0.1_29083 -> 00:26:13.981513 raft.go:349: RPC.AppendEntries: [{3 1 {escribir key: 3 value: 3}}]
+127.0.0.1_29083 -> 00:26:13.981521 raft.go:218: Añadimos las entradas al log
+127.0.0.1_29083 -> 00:26:13.981529 raft.go:223: Aplicamos a la máquina de estado aquellas entradas que no hayan sido aplicados
+127.0.0.1_29083 -> 00:26:13.981547 raft.go:353: Log: [{0 1 {escribir key: 0 value: 0}} {1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}} {3 1 {escribir key: 3 value: 3}} {3 1 {escribir key: 3 value: 3}}]
+127.0.0.1_29083 -> 00:26:13.981576 raft.go:577: Aplicada operación {escribir key: 3 value: 3}
+127.0.0.1_29083 -> 00:26:13.981610 raft.go:578: ESTADO NODO: init: CI:3 Log: [{0 1 {escribir key: 0 value: 0}} {1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}} {3 1 {escribir key: 3 value: 3}} {3 1 {escribir key: 3 value: 3}}] Almacen: map[key: 0:value: 0 key: 1:value: 1 key: 2:value: 2 key: 3:value: 3]
+127.0.0.1_29083 -> 00:26:14.249327 raft.go:605: STATE: Candidate | 2
+127.0.0.1_29083 -> 00:26:14.249458 raft.go:415: Nueva elección | 2
+127.0.0.1_29083 -> 00:26:14.249932 raft.go:383: RPC.PedirVoto: REQ[2]{&{2 2 4 1}} -> RES[1]{&{0 false}}
+127.0.0.1_29083 -> 00:26:14.250012 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:14.249943 raft.go:383: RPC.PedirVoto: REQ[2]{&{2 2 4 1}} -> RES[0]{&{0 false}}
+127.0.0.1_29083 -> 00:26:14.250066 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:14.626574 raft.go:415: Nueva elección | 3
+127.0.0.1_29083 -> 00:26:14.626970 raft.go:383: RPC.PedirVoto: REQ[2]{&{3 2 4 1}} -> RES[1]{&{0 false}}
+127.0.0.1_29083 -> 00:26:14.627039 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:14.627027 raft.go:383: RPC.PedirVoto: REQ[2]{&{3 2 4 1}} -> RES[0]{&{0 false}}
+127.0.0.1_29083 -> 00:26:14.627093 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:15.001607 raft.go:415: Nueva elección | 4
+127.0.0.1_29083 -> 00:26:15.002083 raft.go:383: RPC.PedirVoto: REQ[2]{&{4 2 4 1}} -> RES[0]{&{0 false}}
+127.0.0.1_29083 -> 00:26:15.002159 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:15.002103 raft.go:383: RPC.PedirVoto: REQ[2]{&{4 2 4 1}} -> RES[1]{&{0 false}}
+127.0.0.1_29083 -> 00:26:15.002270 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:15.377590 raft.go:415: Nueva elección | 5
+127.0.0.1_29083 -> 00:26:15.378004 raft.go:383: RPC.PedirVoto: REQ[2]{&{5 2 4 1}} -> RES[1]{&{0 false}}
+127.0.0.1_29083 -> 00:26:15.378085 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:15.378028 raft.go:383: RPC.PedirVoto: REQ[2]{&{5 2 4 1}} -> RES[0]{&{0 false}}
+127.0.0.1_29083 -> 00:26:15.378195 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:15.753524 raft.go:415: Nueva elección | 6
+127.0.0.1_29083 -> 00:26:15.753985 raft.go:383: RPC.PedirVoto: REQ[2]{&{6 2 4 1}} -> RES[0]{&{0 false}}
+127.0.0.1_29083 -> 00:26:15.754065 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:15.754008 raft.go:383: RPC.PedirVoto: REQ[2]{&{6 2 4 1}} -> RES[1]{&{0 false}}
+127.0.0.1_29083 -> 00:26:15.754141 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:16.130481 raft.go:415: Nueva elección | 7
+127.0.0.1_29083 -> 00:26:16.130637 raft.go:383: RPC.PedirVoto: REQ[2]{&{7 2 4 1}} -> RES[0]{&{0 false}}
+127.0.0.1_29083 -> 00:26:16.130659 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:16.130637 raft.go:383: RPC.PedirVoto: REQ[2]{&{7 2 4 1}} -> RES[1]{&{0 false}}
+127.0.0.1_29083 -> 00:26:16.130671 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:16.506198 raft.go:415: Nueva elección | 8
+127.0.0.1_29083 -> 00:26:16.506582 raft.go:383: RPC.PedirVoto: REQ[2]{&{8 2 4 1}} -> RES[0]{&{0 false}}
+127.0.0.1_29083 -> 00:26:16.506606 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:16.531900 raft.go:383: RPC.PedirVoto: REQ[2]{&{8 2 4 1}} -> RES[1]{&{0 false}}
+127.0.0.1_29083 -> 00:26:16.531950 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:16.882462 raft.go:415: Nueva elección | 9
+127.0.0.1_29083 -> 00:26:16.882877 raft.go:383: RPC.PedirVoto: REQ[2]{&{9 2 4 1}} -> RES[0]{&{0 false}}
+127.0.0.1_29083 -> 00:26:16.882914 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:16.908191 raft.go:383: RPC.PedirVoto: REQ[2]{&{9 2 4 1}} -> RES[1]{&{0 false}}
+127.0.0.1_29083 -> 00:26:16.908235 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:17.257603 raft.go:415: Nueva elección | 10
+127.0.0.1_29083 -> 00:26:17.258014 raft.go:383: RPC.PedirVoto: REQ[2]{&{10 2 4 1}} -> RES[0]{&{0 false}}
+127.0.0.1_29083 -> 00:26:17.258050 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:17.283356 raft.go:383: RPC.PedirVoto: REQ[2]{&{10 2 4 1}} -> RES[1]{&{0 false}}
+127.0.0.1_29083 -> 00:26:17.283407 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:17.633753 raft.go:415: Nueva elección | 11
+127.0.0.1_29083 -> 00:26:17.634211 raft.go:383: RPC.PedirVoto: REQ[2]{&{11 2 4 1}} -> RES[0]{&{0 false}}
+127.0.0.1_29083 -> 00:26:17.634295 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:17.659778 raft.go:383: RPC.PedirVoto: REQ[2]{&{11 2 4 1}} -> RES[1]{&{0 false}}
+127.0.0.1_29083 -> 00:26:17.659853 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.010309 raft.go:415: Nueva elección | 12
+127.0.0.1_29083 -> 00:26:18.010748 raft.go:383: RPC.PedirVoto: REQ[2]{&{12 2 4 1}} -> RES[0]{&{0 false}}
+127.0.0.1_29083 -> 00:26:18.010824 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.036250 raft.go:383: RPC.PedirVoto: REQ[2]{&{12 2 4 1}} -> RES[1]{&{0 false}}
+127.0.0.1_29083 -> 00:26:18.036315 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.385659 raft.go:415: Nueva elección | 13
+127.0.0.1_29083 -> 00:26:18.386125 raft.go:383: RPC.PedirVoto: REQ[2]{&{13 2 4 1}} -> RES[0]{&{0 false}}
+127.0.0.1_29083 -> 00:26:18.386178 raft.go:455: RECV RPC.PedirVoto: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.386523 raft.go:383: RPC.PedirVoto: REQ[2]{&{13 2 4 1}} -> RES[1]{&{13 true}}
+127.0.0.1_29083 -> 00:26:18.386545 raft.go:445: RECV RPC.PedirVoto: Voto recibido de 1
+127.0.0.1_29083 -> 00:26:18.386560 raft.go:608: STATE: Leader | 13
+127.0.0.1_29083 -> 00:26:18.386604 raft.go:659: Leader init: CI:3 Log: [{0 1 {escribir key: 0 value: 0}} {1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}} {3 1 {escribir key: 3 value: 3}} {3 1 {escribir key: 3 value: 3}}] Almacen: map[key: 0:value: 0 key: 1:value: 1 key: 2:value: 2 key: 3:value: 3]
+127.0.0.1_29083 -> 00:26:18.386616 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.386721 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 3}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.386740 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.387139 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 3}} -> RES[1]{&{13 false -1}}
+127.0.0.1_29083 -> 00:26:18.387160 raft.go:483: RECV RPC.AppendEntries: NOT OK -> retrocedemos NI:5 -> NI:4
+127.0.0.1_29083 -> 00:26:18.412350 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.412757 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 3 1 [{3 1 {escribir key: 3 value: 3}}] 3}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.412834 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.413259 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 3 1 [{3 1 {escribir key: 3 value: 3}}] 3}} -> RES[1]{&{13 false -1}}
+127.0.0.1_29083 -> 00:26:18.413284 raft.go:483: RECV RPC.AppendEntries: NOT OK -> retrocedemos NI:4 -> NI:3
+127.0.0.1_29083 -> 00:26:18.437451 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.437888 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 2 1 [{3 1 {escribir key: 3 value: 3}} {3 1 {escribir key: 3 value: 3}}] 3}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.437917 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.438366 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 2 1 [{3 1 {escribir key: 3 value: 3}} {3 1 {escribir key: 3 value: 3}}] 3}} -> RES[1]{&{13 false -1}}
+127.0.0.1_29083 -> 00:26:18.438393 raft.go:483: RECV RPC.AppendEntries: NOT OK -> retrocedemos NI:3 -> NI:2
+127.0.0.1_29083 -> 00:26:18.462540 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.462870 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 1 1 [{2 1 {escribir key: 2 value: 2}} {3 1 {escribir key: 3 value: 3}} {3 1 {escribir key: 3 value: 3}}] 3}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.462937 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.463788 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 1 1 [{2 1 {escribir key: 2 value: 2}} {3 1 {escribir key: 3 value: 3}} {3 1 {escribir key: 3 value: 3}}] 3}} -> RES[1]{&{13 false -1}}
+127.0.0.1_29083 -> 00:26:18.463817 raft.go:483: RECV RPC.AppendEntries: NOT OK -> retrocedemos NI:2 -> NI:1
+127.0.0.1_29083 -> 00:26:18.487003 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.487456 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 0 1 [{1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}} {3 1 {escribir key: 3 value: 3}} {3 1 {escribir key: 3 value: 3}}] 3}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.487483 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.487932 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 0 1 [{1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}} {3 1 {escribir key: 3 value: 3}} {3 1 {escribir key: 3 value: 3}}] 3}} -> RES[1]{&{13 false -1}}
+127.0.0.1_29083 -> 00:26:18.487957 raft.go:483: RECV RPC.AppendEntries: NOT OK -> retrocedemos NI:1 -> NI:0
+127.0.0.1_29083 -> 00:26:18.512209 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.512693 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 -1 1 [{0 1 {escribir key: 0 value: 0}} {1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}} {3 1 {escribir key: 3 value: 3}} {3 1 {escribir key: 3 value: 3}}] 3}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.512774 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.513843 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 -1 1 [{0 1 {escribir key: 0 value: 0}} {1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}} {3 1 {escribir key: 3 value: 3}} {3 1 {escribir key: 3 value: 3}}] 3}} -> RES[1]{&{13 true 4}}
+127.0.0.1_29083 -> 00:26:18.513873 raft.go:471: RECV RPC.AppendEntries: OK -> avanzamos NI:0 -> NI:5 y MI:-1 -> MI:4
+127.0.0.1_29083 -> 00:26:18.513892 raft.go:577: Aplicada operación {escribir key: 3 value: 3}
+127.0.0.1_29083 -> 00:26:18.513925 raft.go:578: ESTADO NODO: init: CI:4 Log: [{0 1 {escribir key: 0 value: 0}} {1 1 {escribir key: 1 value: 1}} {2 1 {escribir key: 2 value: 2}} {3 1 {escribir key: 3 value: 3}} {3 1 {escribir key: 3 value: 3}}] Almacen: map[key: 0:value: 0 key: 1:value: 1 key: 2:value: 2 key: 3:value: 3]
+127.0.0.1_29083 -> 00:26:18.537033 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.537298 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.537343 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.538036 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[1]{&{13 true 4}}
+127.0.0.1_29083 -> 00:26:18.538073 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29083 -> 00:26:18.562072 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.562338 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.562380 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.562989 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[1]{&{13 true 4}}
+127.0.0.1_29083 -> 00:26:18.563028 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29083 -> 00:26:18.587119 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.587426 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.587493 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.588398 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[1]{&{13 true 4}}
+127.0.0.1_29083 -> 00:26:18.588453 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29083 -> 00:26:18.612594 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.613032 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.613109 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.614023 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[1]{&{13 true 4}}
+127.0.0.1_29083 -> 00:26:18.614128 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29083 -> 00:26:18.637203 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.637633 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.637714 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.638849 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[1]{&{13 true 4}}
+127.0.0.1_29083 -> 00:26:18.638916 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29083 -> 00:26:18.662051 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.662472 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.662543 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.663623 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[1]{&{13 true 4}}
+127.0.0.1_29083 -> 00:26:18.663691 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29083 -> 00:26:18.686689 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.687139 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.687295 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.688355 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[1]{&{13 true 4}}
+127.0.0.1_29083 -> 00:26:18.688421 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29083 -> 00:26:18.712531 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.712950 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.713018 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.714086 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[1]{&{13 true 4}}
+127.0.0.1_29083 -> 00:26:18.714143 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29083 -> 00:26:18.737216 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.737701 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.737775 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.738814 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[1]{&{13 true 4}}
+127.0.0.1_29083 -> 00:26:18.738879 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29083 -> 00:26:18.761986 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.762629 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.762707 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.763686 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[1]{&{13 true 4}}
+127.0.0.1_29083 -> 00:26:18.763753 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29083 -> 00:26:18.786730 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.787173 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.787249 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.788179 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[1]{&{13 true 4}}
+127.0.0.1_29083 -> 00:26:18.788250 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29083 -> 00:26:18.812342 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.812767 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.812847 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.813941 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[1]{&{13 true 4}}
+127.0.0.1_29083 -> 00:26:18.814006 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29083 -> 00:26:18.837129 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.837522 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.837597 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.838570 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[1]{&{13 true 4}}
+127.0.0.1_29083 -> 00:26:18.838637 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29083 -> 00:26:18.862738 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.863181 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.863259 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.864238 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[1]{&{13 true 4}}
+127.0.0.1_29083 -> 00:26:18.864302 raft.go:476: RECV RPC.AppendEntries: OK
+127.0.0.1_29083 -> 00:26:18.886685 raft.go:507: Nuevo latido
+127.0.0.1_29083 -> 00:26:18.886942 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[0]{&{0 false 0}}
+127.0.0.1_29083 -> 00:26:18.887205 raft.go:495: RECV RPC.AppendEntries: ERROR al recibir mensaje
+127.0.0.1_29083 -> 00:26:18.888859 raft.go:401: RPC.AppendEntries: REQ[2]{&{13 2 4 1 [] 4}} -> RES[1]{&{13 true 4}}
+127.0.0.1_29083 -> 00:26:18.888881 raft.go:476: RECV RPC.AppendEntries: OK
