@@ -19,7 +19,7 @@ const (
 	// true para activar los logs de debug
 	kEnableDebugLogs = true
 	// true para imprimir los logs en stdout
-	kLogToStdout = true
+	kLogToStdout = false
 	// Directorio donde se guardan los logs
 	kLogOutputDir = "./logs_raft/"
 	// ---------- ESTADOS DEL NODO ----------

@@ -6,7 +6,7 @@ metadata:
     app: rep
 spec:
   clusterIP: None
-  selector:      # tiene que coincidir con label definido en pod de StatefulSet
+  selector:   # tiene que coincidir con label definido en pod de StatefulSet
     app: rep  # Para dar de alta automaticamente en DNS a los PODS ligados
   ports:
   - port: 6000
@@ -50,3 +50,16 @@ spec:
           - ss-2.ss-service.default.svc.cluster.local:6000
           ports:
           - containerPort: 6000
+---
+kind: Pod
+metadata:
+  name: c1
+spec:
+  restartPolicy: Never
+  containers:
+  - name: cliente
+    image: localhost:5001/cliente:latest
+    command: ["/bin/sh"]
+    args: ["-c", "sleep 3600;"] 
+    ports:
+    - containerPort: 7000
