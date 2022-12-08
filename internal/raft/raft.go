@@ -27,6 +27,9 @@ const (
 	Follower  = "follower"
 	Candidate = "candidate"
 	Leader    = "leader"
+	// ---------- TIPO OPERACION ------------
+	Lectura   = "lectura"
+	Escritura = "escritura"
 )
 
 /**
@@ -184,11 +187,16 @@ func (nr *NodoRaft) someterOperacion(operacion TipoOperacion) (int, int,
 		return indice, mandato, EsLider, idLider, valorADevolver
 	}
 
+	if operacion.Operacion == Lectura {
+		valorADevolver = nr.Almacen[operacion.Clave]
+	} else {
+		valorADevolver = operacion.Valor
+	}
+
 	indice = len(nr.State.Log)
 	mandato = nr.State.CurrentTerm
 	EsLider = true
 	idLider = nr.Yo
-	valorADevolver = operacion.Valor
 	nr.State.Log = append(nr.State.Log, AplicaOperacion{indice, mandato, operacion})
 	nr.Logger.Printf("Operacion añadida al log: %v", operacion)
 

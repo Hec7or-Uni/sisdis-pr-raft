@@ -1,6 +1,6 @@
 # sisdis-pr-RAFT
 
-## 1. Introduction
+## 1. Introducción
 
 ## 2. Uso
 
@@ -16,7 +16,7 @@ cd ~/.ssh
 ssh-keygen -t ed25519
 ```
 
-#### 3.1.1 Añádir la clave publica al fichero authorized_keys
+#### 3.1.1 Añádir la clave pública al fichero authorized_keys
 
 Desde la máquina local
 ```bash
@@ -46,7 +46,7 @@ Dentro del fichero de tests hay que modificar las siguientes variables:
 
 ### 3.3. Ejecución de los tests
 
-Desde el directorio raiz del proyecto ejecutar el siguiente comando:
+Desde el directorio raíz del proyecto ejecutar el siguiente comando:
 
 ```bash
 go test -v ./...
@@ -56,4 +56,47 @@ go test -v ./...
 
 ```bash
 go test -v ./internal/testintegracionraft1/testintegracionraft1_test.go
+```
+
+## 4. Kubernetes
+
+### 4.1. Compilar ejecutables
+```bash
+CGO_ENABLED=0 go build -o cmd/srvraft/servidor cmd/srvraft/main.go
+CGO_ENABLED=0 go build -o cmd/cltraft/cliente cmd/cltraft/main.go
+```
+
+### 4.2. Construir las imágenes de docker
+
+```bash
+docker build cmd/cltraft/ -t localhost:5001/cliente:latest
+docker build cmd/srvraft/ -t localhost:5001/servidor:latest
+```
+
+### 4.3. Subir las imágenes al repositorio local
+```bash
+docker push localhost:5001/cliente:latest
+docker push localhost:5001/servidor:latest
+```
+
+### 4.4. Desplegar el cluster
+
+```bash
+./deployCluster.sh 
+```
+
+> **Warning**: Se ha tenido en cuenta que ya existe un cluster de kubernetes en la máquina local, sino ejecutar el siguiente comando
+
+```bash
+./kind-with-registry.sh
+```
+
+### Comandos útiles
+
+```bash
+sudo kubectl get pods 
+kubectl exec c1 -ti -- sh 
+kubectl get all
+kubectl get pods -o wide
+kubectl describe svc ss-service
 ```

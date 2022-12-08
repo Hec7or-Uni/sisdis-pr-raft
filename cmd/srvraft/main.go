@@ -12,7 +12,7 @@ import (
 
 func main() {
 	// obtener entero de indice de este nodo
-	me, err := strconv.Atoi(os.Args[1])
+	me, err := strconv.Atoi(os.Args[1][3:])
 	check.CheckError(err, "Main, mal numero entero de indice de nodo:")
 
 	var nodos []rpctimeout.HostPort
