@@ -46,7 +46,7 @@ func main() {
 		switch opt {
 		case 0:
 			fmt.Printf("Hasta la proxima.")
-			break
+			return
 		case 1:
 			var rEstadoRemoto raft.EstadoRemoto
 			replicaExec(node, GET_STATE, raft.Vacio{}, &rEstadoRemoto)

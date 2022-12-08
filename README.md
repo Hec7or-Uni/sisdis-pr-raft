@@ -2,6 +2,8 @@
 
 ## 1. Introducción
 
+Se va a realizar un sistema de almacenamiento clave/valor basado en RAFT y su posterior despliegue en un cluster de Kubernetes.
+
 ## 2. Uso
 
 ```bash
@@ -94,9 +96,10 @@ docker push localhost:5001/servidor:latest
 ### Comandos útiles
 
 ```bash
-sudo kubectl get pods 
-kubectl exec c1 -ti -- sh 
+kubectl exec c1 -ti -- sh
 kubectl get all
+kubectl get all -o wide
+kubectl get pods
 kubectl get pods -o wide
 kubectl describe svc ss-service
 ```
