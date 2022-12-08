@@ -28,9 +28,6 @@ const (
 var REPLICAS = rpctimeout.StringArrayToHostPortArray([]string{REPLICA1, REPLICA2, REPLICA3})
 
 func main() {
-	var rEstadoRemoto raft.EstadoRemoto
-	var rResultadoRemoto raft.ResultadoRemoto
-	var rEstadoAlmacen raft.EstadoAlmacen
 
 	scanner := bufio.NewScanner(os.Stdin)
 	menu()
@@ -51,12 +48,15 @@ func main() {
 			fmt.Printf("Hasta la proxima.")
 			break
 		case 1:
+			var rEstadoRemoto raft.EstadoRemoto
 			replicaExec(node, GET_STATE, raft.Vacio{}, &rEstadoRemoto)
 			printEstadoRemoto(rEstadoRemoto)
 		case 2:
+			var rEstadoAlmacen raft.EstadoAlmacen
 			replicaExec(node, GET_VAULT_STATE, raft.Vacio{}, &rEstadoAlmacen)
 			printEstadoRemotoAlmacen(rEstadoAlmacen)
 		case 3:
+			var rEstadoRemoto raft.EstadoRemoto
 			replicaExec(node, STOP_NODE, raft.Vacio{}, &rEstadoRemoto)
 			fmt.Printf("Nodo %d detenido.\n", node)
 		case 4, 5:
@@ -70,6 +70,7 @@ func main() {
 				fmt.Printf("\nvalor: ")
 				operacion.Valor = valor
 			}
+			var rResultadoRemoto raft.ResultadoRemoto
 			replicaExec(node, SUBMIT_OP, operacion, &rResultadoRemoto)
 			printOperacion(rResultadoRemoto)
 		}
