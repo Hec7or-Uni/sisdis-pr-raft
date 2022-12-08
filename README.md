@@ -57,3 +57,43 @@ go test -v ./...
 ```bash
 go test -v ./internal/testintegracionraft1/testintegracionraft1_test.go
 ```
+
+## 4. Kubernetes
+
+### 4.1. Compilar ejecutables
+```bash
+CGO_ENABLED=0 go build -o cmd/srvraft/servidor cmd/srvraft/main.go
+CGO_ENABLED=0 go build -o cmd/cltraft/cliente cmd/cltraft/main.go
+```
+
+### 4.2. Construir las imagenes de docker
+
+```bash
+docker build cmd/cltraft/ -t localhost:5001/cliente:latest
+docker build cmd/srvraft/ -t localhost:5001/servidor:latest
+```
+
+### 4.3. Subir las imagenes al repositorio local
+```bash
+docker push localhost:5001/cliente:latest
+docker push localhost:5001/servidor:latest
+```
+
+### 4.4. Desplegar el cluster
+
+```bash
+./deployCluster.sh 
+```
+
+> **Warning**: Se ha tenido en cuenta que ya existe un cluster de kubernetes en la máquina local, sino ejecutar el siguiente comando
+
+```bash
+./kind-with-registry.sh
+```
+
+### Comandos útiles
+
+```bash
+sudo kubectl get pods 
+kubectl exec c1 -ti -- sh 
+```

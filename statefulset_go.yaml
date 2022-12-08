@@ -51,6 +51,7 @@ spec:
           ports:
           - containerPort: 6000
 ---
+apiVersion: v1
 kind: Pod
 metadata:
   name: c1

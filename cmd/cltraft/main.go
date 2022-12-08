@@ -4,10 +4,10 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"raft/internal/comun/check"
 	"raft/internal/comun/rpctimeout"
 	"raft/internal/raft"
 	"strconv"
+	"strings"
 	"time"
 )
 
@@ -25,27 +25,25 @@ const (
 	SUBMIT_OP       = "SometerOperacionRaft"
 )
 
-var REPLICAS = []rpctimeout.HostPort{REPLICA1, REPLICA2, REPLICA3}
+var REPLICAS = rpctimeout.StringArrayToHostPortArray([]string{REPLICA1, REPLICA2, REPLICA3})
 
 func main() {
-
 	var rEstadoRemoto raft.EstadoRemoto
 	var rResultadoRemoto raft.ResultadoRemoto
 	var rEstadoAlmacen raft.EstadoAlmacen
 
 	scanner := bufio.NewScanner(os.Stdin)
-	fmt.Println("Presiona enter para empezar...")
+	menu()
 	for scanner.Scan() {
-		menu()
-		fmt.Printf("Opcion: ")
-		opt, err := strconv.Atoi(scanner.Text())
-		fmt.Printf("\nNodo: ")
-		node, err := strconv.Atoi(scanner.Text())
-		if err != nil {
-			continue
-		}
+		values := strings.Split(scanner.Text(), " ")
+		opt, _ := strconv.Atoi(values[0])
+		node, _ := strconv.Atoi(values[1])
+		clave := values[2]
+		valor := values[3]
+
 		fmt.Println("----------------------------------------")
-		fmt.Printf("Opcion seleccionada: %d\nNodo: %d\n", opt, node)
+		fmt.Println("Opcion seleccionada: ", opt)
+		fmt.Println("Nodo seleccionado: ", node)
 		fmt.Println("----------------------------------------")
 
 		switch opt {
@@ -64,17 +62,18 @@ func main() {
 		case 4, 5:
 			var operacion raft.TipoOperacion
 			fmt.Printf("\nclave: ")
-			operacion.Clave = scanner.Text()
+			operacion.Clave = clave
 			if opt == 4 {
 				operacion.Operacion = "lectura"
 			} else {
 				operacion.Operacion = "escritura"
 				fmt.Printf("\nvalor: ")
-				operacion.Valor = scanner.Text()
+				operacion.Valor = valor
 			}
 			replicaExec(node, SUBMIT_OP, operacion, &rResultadoRemoto)
 			printOperacion(rResultadoRemoto)
 		}
+		menu()
 	}
 }
 
@@ -83,16 +82,20 @@ func menu() {
 	fmt.Println("	1. ObtenerEstadoNodo - [i]")
 	fmt.Println("	2. ObtenerEstadoAlmacen - [i]")
 	fmt.Println("	3. ParaNodo - [i]")
-	fmt.Println("	4. SometerOperacionRaft - [i] -> lectura")
-	fmt.Println("	5. SometerOperacionRaft - [i] -> escritura")
+	fmt.Println("	4. SometerOperacionRaft - [i] -> lectura | clave")
+	fmt.Println("	5. SometerOperacionRaft - [i] -> escritura | clave, valor")
 	fmt.Println("	0. Exit")
 	fmt.Println("========================================")
+	fmt.Printf("Introduzca una opcion y un nodo (<opcion*> <nodo*> <clave> <valor>): ")
 }
 
 func replicaExec(node int, rpc string, args interface{}, reply interface{}) {
 	err := REPLICAS[node].CallTimeout(PREFIX+"."+rpc,
 		args, reply, 25*time.Millisecond)
-	check.CheckError(err, "Error en llamada RPC Para nodo")
+	if err != nil {
+		fmt.Println("Error en llamada RPC Para nodo")
+		fmt.Println(err)
+	}
 }
 
 func printEstadoRemoto(estadoRemoto raft.EstadoRemoto) {
