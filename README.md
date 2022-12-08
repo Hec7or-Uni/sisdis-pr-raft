@@ -102,4 +102,5 @@ kubectl get all -o wide
 kubectl get pods
 kubectl get pods -o wide
 kubectl describe svc ss-service
+kubectl scale --replicas=2 -f statefulset_go.yaml
 ```
